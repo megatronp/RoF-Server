@@ -17,18 +17,6 @@ if(_veh == "B_Quadbike_01_F") exitWith {true}; //ATV's don't need to require a l
 
 switch (life_veh_shop select 0) do
 {
-	case "test_shop_bucket": {_ret = true;};
-	case "test_shop_air": {_ret = true;};
-	case "test_shop_plane": {_ret = true;};
-	case "test_shop_car": {_ret = true;};
-	case "test_shop_truck": {_ret = true;};
-	case "test_shop_exotic": {_ret = true;};
-	case "test_shop_supporter": {_ret = true;};
-	case "test_shop_cop1": {_ret = true;};
-	case "test_shop_cop2": {_ret = true;};
-	case "test_shop_cop3": {_ret = true;};
-	case "test_shop_cop4": {_ret = true;};
-	
 	case "exotic_shop": {_ret = license_civ_driver;};	
 	case "bucket_shop": {_ret = license_civ_driver;};	
 	case "plane_shop": {_ret = license_civ_air;};	
