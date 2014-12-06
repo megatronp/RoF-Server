@@ -19,5 +19,5 @@ if(isNull _unit) exitWith {}; //Not valid
 
 if(isNull _unit) exitWith {}; //Not valid
 detach _unit;
-[[_unit,false],"life_fnc_jail",_unit,false] spawn life_fnc_MP;
+[[getPlayerUID _unit,_unit,player,false],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 [[0,format[localize "STR_NOTF_Arrested_1", _unit getVariable["realname",name _unit], profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;

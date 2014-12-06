@@ -60,7 +60,7 @@ if(life_is_arrested) exitWith {
 
 //Johnny law got me but didn't let the EMS revive me, reward them half the bounty.
 if(!isNil "life_copRecieve") then {
-	[[player,life_copRecieve,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player,player,life_copRecieve,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 	life_copRecieve = nil;
 };
 

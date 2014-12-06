@@ -90,6 +90,7 @@ LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObje
 [] call life_fnc_settingsInit;
 player setVariable["steam64ID",getPlayerUID player];
 player setVariable["realname",profileName,true];
+[[getPlayerUID player,player getVariable["realname",name player]],"life_fnc_wantedProfUpdate",false,false] spawn life_fnc_MP;
 
 life_curWep_h = currentWeapon player;
 player action ["SwitchWeapon", player, player, 100];

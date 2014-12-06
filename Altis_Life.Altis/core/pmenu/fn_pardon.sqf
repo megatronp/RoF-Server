@@ -16,5 +16,5 @@ if(isNil "_data") exitWith {};
 if(typeName _data != "ARRAY") exitWith {};
 if(count _data == 0) exitWith {};
 
-_uid = _data select 1;
-[[_uid],"life_fnc_wantedPardon",false,false] spawn life_fnc_MP;
+_uid = _data select 0;
+[[_uid],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
