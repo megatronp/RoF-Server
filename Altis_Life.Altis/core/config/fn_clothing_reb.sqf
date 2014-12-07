@@ -31,7 +31,11 @@ switch (_filter) do
 			["U_B_CTRG_1","Combat UniformT",15000],
 			["U_I_CombatUniform_shortsleeve","Combat Fatigues Shortsleeve",15000],
 			["U_I_CombatUniform","Combat Fatigues",15000],
-			["U_O_OfficerUniform_ocamo","Officer Uniform",15000]
+			["U_O_OfficerUniform_ocamo","Officer Uniform",15000],
+			["U_O_SpecopsUniform_blk","Blck Ops",15000],
+			["U_I_CombatUniform_tshirt","Combat Fatigues T-shirt",15000],
+			["U_BG_leader","Officer Uni",15000],
+			["U_B_CombatUniform_mcam_tshirt","Combat T-shirt",15000]
 		];
 	};
 	
@@ -48,7 +52,11 @@ switch (_filter) do
 			["H_MilCap_mcamo",nil,850],
 			["H_MilCap_blue",nil,850],
 			["H_PilotHelmetFighter_I",nil,1000],
-			["H_CrewHelmetHeli_I",nil,1000]
+			["H_CrewHelmetHeli_I",nil,1000],
+			["H_MilCap_gry",nil,800],
+			["H_Hat_camo",nil,800],
+			["H_Cap_blk",nil,100],
+			["H_Watchcap_camo",nil,800]
 		];
 	};
 	
@@ -85,8 +93,11 @@ switch (_filter) do
 	{
 		[
 			["V_TacVest_khk",nil,12500],
-			["V_BandollierB_cbr",nil,4500],
-			["V_HarnessO_brn",nil,7500]
+			["V_BandollierB_cbr",nil,3500],
+			["V_HarnessO_brn",nil,7500],
+			["V_TacVest_camo",nil,12500],
+			["V_Chestrig_oli",nil,12500]
+			
 		];
 	};
 	

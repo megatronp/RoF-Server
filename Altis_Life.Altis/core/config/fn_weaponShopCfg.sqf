@@ -249,6 +249,8 @@ case "cop_basic":
 						["RH_g18",nil,40000],
 						["RH_33Rnd_9x19_g18",nil,1200],
 						["RH_30Rnd_9x19_UZI",nil,750],
+						["arifle_SDAR_F","scuba gun",15000],
+						["20rnd_556x45_UW_mag","scuba ammo",120],
 						["RH_usp",nil,18200],
 						["RH_12Rnd_45cal_usp",nil,300],
 						["RH_aacusp","USP Silencer",12000],

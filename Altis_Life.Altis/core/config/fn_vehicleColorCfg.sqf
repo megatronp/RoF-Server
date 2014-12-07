@@ -750,7 +750,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "cl3_e60_m5_red":
+	case "cl3_e63_amg_red":
 	{ 
 		_ret = 
 		[

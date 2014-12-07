@@ -77,7 +77,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["goldbarp", 30000, 20000, 40000, random(100), 1, 
+	["goldbarp", 40000, 30000, 60000, random(100), 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -90,7 +90,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["goldbar", 50000, 30000, 70000, random(150), 1],
+	["goldbar", 70000, 40000, 90000, random(150), 1],
 	
 	["kidney", 15000, 5000, 30000, 5, 1],
 	
