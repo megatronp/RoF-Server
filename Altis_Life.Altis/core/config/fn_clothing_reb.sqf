@@ -35,7 +35,8 @@ switch (_filter) do
 			["U_O_SpecopsUniform_blk","Blck Ops",15000],
 			["U_I_CombatUniform_tshirt","Combat Fatigues T-shirt",15000],
 			["U_BG_leader","Officer Uni",15000],
-			["U_B_CombatUniform_mcam_tshirt","Combat T-shirt",15000]
+			["U_B_CombatUniform_mcam_tshirt","Combat T-shirt",15000],
+			["U_BG_Guerrilla_6_1","Guerilla Apparel",15000]
 		];
 	};
 	

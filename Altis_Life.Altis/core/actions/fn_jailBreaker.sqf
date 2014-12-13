@@ -31,11 +31,11 @@ _player = _this select 1;
 _action = _this select 2;
 _action2 = _this select 3;
 
-_bombWaitTime = (35);  
-_hackWaitTime  = (20); 
-_repairWaitTime  = (25); 
+_bombWaitTime = (75);  
+_hackWaitTime  = (3 * 60); 
+_repairWaitTime  = (45); 
 _bombfencesTime = (35);
-rebootwaitTime = (45);
+rebootwaitTime = (60);
 
 if (vehicle player != _player) exitWith { hint "No Vehicles..";};
 if !(alive _player) exitWith {};

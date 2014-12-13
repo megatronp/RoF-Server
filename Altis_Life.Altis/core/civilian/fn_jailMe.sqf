@@ -10,7 +10,7 @@ _ret = [_this,0,[],[[]]] call BIS_fnc_param;
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
 if(_bad) then { _time = time + 1400; } else { _time = time + (35 * 60); };
 
-if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail_amount = 1500; _time = time + (10 * 60); };
+if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail_amount = 30000; _time = time + (35 * 60); };
 _esc = false;
 _bail = false;
 
@@ -30,7 +30,7 @@ shockFence = {
 	life_canpay_bail = false;
 	if(_this select 0) then
 	{
-		sleep (12 * 60);
+		sleep (8 * 60);
 	}
 		else
 	{

@@ -7,23 +7,32 @@
 */
 removeAllContainers player;
 removeAllWeapons player;
+removeGoggles player;
+removeHeadGear player;
 player forceAddUniform "emt_uni3"; 
 player addBackpack "B_Bergen_blk";
-player addItem "ToolKit";
-player addItem "Medikit";
+player addItemToBackpack "ToolKit";
+player addItemToBackpack "Medikit";
+player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "FirstAidKit";
+player addItemToBackpack "FirstAidKit";
 player addItem "Binocular";
-player addItem "FirstAidKit";
-player addItem "FirstAidKit";
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
-removeGoggles player;
-removeHeadGear player;
+player addItem "ItemGPS";
+player assignItem "ItemGPS";
+player addItemToBackpack "chemlight_red";
+player addItemToBackpack "chemlight_red";
+player addItemToBackpack "chemlight_red";
+player addItemToBackpack "chemlight_red";
+player addItemToBackpack "chemlight_red";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
-
 (unitbackpack player) setObjectTextureGlobal[0,"textures\medic\bergen_medic.jpg"];

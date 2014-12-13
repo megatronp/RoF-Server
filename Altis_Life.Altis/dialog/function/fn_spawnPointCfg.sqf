@@ -68,8 +68,12 @@ switch (_side) do
 	case independent: {
 		_return = [
 			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_2","Airport Regional Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_clinic_spawn_1","Athira Clinic","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_clinic_spawn_2","Sofia Clinic","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_clinic_spawn_3","Agios Dionysios Clinic","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
+			["medic_clinic_spawn_4","Paros Clinic","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]	
 		];
 	};
 };
