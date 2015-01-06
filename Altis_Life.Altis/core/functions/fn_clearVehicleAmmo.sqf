@@ -61,6 +61,15 @@ if(_veh == "B_Heli_Light_01_armed_F") then
 	_vehicle removeMagazinesTurret ["24Rnd_missiles",[2]];
 };
 
+if(_veh == "kyo_MH47E_HC") then 
+{
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[0]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
+};
+
+
+
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
+

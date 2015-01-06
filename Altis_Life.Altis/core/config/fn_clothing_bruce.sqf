@@ -31,7 +31,19 @@ switch (_filter) do
 		["U_C_HunterBody_grn","The Hunters Look",1500],
 		["U_C_WorkerCoveralls","Mechanic Coveralls",2500],
 		["U_OrestesBody","Surfing On Land",1100],
-		["U_NikosAgedBody","Casual Wears",5000]
+		["U_NikosAgedBody","Casual Wears",5000],
+		["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,3000],
+		["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,3000],
+		["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,3000],
+		["U_PMC_CombatUniformLS_ChckP_BPBB",nil,3000],
+		["U_PMC_CombatUniformLS_GSSPBB",nil,3000],
+		["U_PMC_CombatUniformLS_SSGPBB",nil,3000],
+		["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,3000],
+		["U_PMC_CombatUniformRS_SSBPBB",nil,3000],
+		["U_PMC_RedPlaidShirt_DenimCords",nil,2200],
+		["U_PMC_BluTShirt_SJeans",nil,2500],
+		["U_PMC_BluePlaidShirt_BeigeCords",nil,2500],
+		["U_PMC_CombatUniformRS_ChckP_BPBB",nil,2100]
 		];
 	};
 	
@@ -60,7 +72,8 @@ switch (_filter) do
 			["H_Cap_oli",nil,150],
 			["H_Cap_red",nil,150],
 			["H_Cap_tan",nil,150],
-			["H_Cap_press",nil,150]
+			["H_Capbw_pmc",nil,450],
+			["H_Capbw_tan_pmc",nil,450]
 		];
 	};
 	
@@ -88,7 +101,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-		    ["V_Press_F",nil,500]
+		    ["V_BandollierB_blk",nil,2500]
 		];
 	};
 	

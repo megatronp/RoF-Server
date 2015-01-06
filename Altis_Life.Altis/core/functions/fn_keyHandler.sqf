@@ -58,6 +58,16 @@ switch (_code) do
 		};
 	};
 	*/
+	 // earplugs "END" key
+	case 207:
+	{
+		switch (player getVariable["Earplugs",0]) do {
+			case 0: {hintSilent "Ear Plugs 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+			case 10: {hintSilent "Ear Plugs 60%"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+			case 40: {hintSilent "Ear Plugs 30%"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+			case 70: {hintSilent "Ear Plugs Removed"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+		};
+	};	
 	case 48:
 	{
 		if(_shift) then {_handled = true;};

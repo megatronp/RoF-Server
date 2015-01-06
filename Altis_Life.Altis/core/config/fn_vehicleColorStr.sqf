@@ -14,6 +14,514 @@ switch (_vehicle) do
 {
 
 
+	case "exxpensive_jaguar_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_aventador_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_ford_raptor_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_mercedes_sls_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_cadillac_sedan_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "SAL_IROCCiv":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "SAL_77TRANSAMCiv":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_m5_e34_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "SAL_AudiCiv":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_volvo_242_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+
+	case "exxpensive_2cv_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "exxpensive_chevrolet_caprice_base":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Wood Panel White";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
+	case "IVORY_R8":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Red";};
+			case 1: {_color = "Green";};
+			case 2: {_color = "Blue";};
+			case 3: {_color = "Black";};
+			case 4: {_color = "White";};
+			case 5: {_color = "Grey";};
+			case 6: {_color = "Yellow";};
+			case 7: {_color = "Lime";};
+			case 8: {_color = "Orange";};
+			case 9: {_color = "Aqua";};
+			case 10: {_color = "Gold";};
+			case 11: {_color = "Silver";};
+			case 12: {_color = "Lavender";};
+			case 13: {_color = "Burgundy";};
+			case 14: {_color = "Sand";};
+			case 15: {_color = "Light Blue";};
+			case 16: {_color = "Pink";};			
+			case 17: {_color = "Purple";};
+			case 18: {_color = "Camo";};
+			case 19: {_color = "White Camo";};
+			case 20: {_color = "Flame 1";};
+			case 21: {_color = "Flame 2";};
+			case 22: {_color = "Flame 3";};
+			case 23: {_color = "Taxi Check";};
+			case 24: {_color = "Check Blue Yellow";};
+			case 25: {_color = "Back Striped";};
+			case 26: {_color = "Carbon";};
+			case 27: {_color = "2T Blue/Green";};
+			case 28: {_color = "2T Purple/Pink";};
+			case 29: {_color = "2T White/Blue";};			
+			case 30: {_color = "2T Yellow/Lime";};
+			case 31: {_color = "2T Fire";};			
+		};
+	};
+
 
 	case "bwi_a3_t6a_1":
 	{

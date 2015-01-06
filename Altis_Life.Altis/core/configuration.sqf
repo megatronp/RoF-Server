@@ -27,7 +27,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = .6; //Scaled in minutes
+life_respawn_timer = 3; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -136,7 +136,7 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","B_Boat_Armed_01_minigun_F","B_Heli_Light_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","B_Boat_Armed_01_minigun_F","B_Heli_Light_01_armed_F","bwi_a3_t6a_1","FLAY_HangGlider","dbo_CIV_new_bike"];
 life_vShop_copOnly = ["B_Heli_Light_01_armed_F","I_Heli_light_03_unarmed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 __CONST__(life_vShop_copOnly,life_vShop_copOnly); //Police Vehicles which can't be purchased and only rented.
@@ -234,7 +234,14 @@ life_licenses =
 	["license_civ_uranium", "civ"],
 	["license_civ_grapes","civ"],
 	["license_civ_moonshine","civ"],
-	["license_civ_goldbar","civ"]
+	["license_civ_goldbar","civ"],
+	["license_civ_gang_ogc","civ"],
+	["license_civ_gang_boundurant","civ"],
+	["license_civ_gang_enterprise","civ"],
+	["license_civ_gang_tbb","civ"],
+	["license_civ_gang_open1","civ"],
+	["license_civ_gang_open2","civ"],
+	["license_civ_gang_newscrew","civ"]
 ];
 
 //Setup License Variables
@@ -412,8 +419,7 @@ life_garage_prices =
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
-life_garage_sell =
-[
-	["B_Quadbike_01_F",2000],["cl3_volha_grey",2500],["cl3_lada_white",2700],["cl3_s1203_blue",3000],["A3L_EscortTaxi",3200],["IVORY_PRIUS",3500],["A3L_RegalRed",5000],["A3L_FordKaRed",5350],["cl3_golf_mk2_red",6400],["A3L_PuntoRed",6000],["cl3_polo_gti_red",8600],["A3L_Cooper_concept_red",7000],["Jonzie_Mini_Cooper_R_spec",15000],["Jonzie_Mini_Cooper",8600],["D_Cobalt_Red",10000],["A3L_VolvoS60Rred",17500],["A3L_JeepRedBlack",15000],["A3L_AMXRed",10000],["cl3_dodge_charger_f_red",15000],["A3L_ChallengerRed",15000],["A3L_Camaro",17500],["cl3_civic_vti_red",17500],["cl3_z4_2008_red",20000],["cl3_e60_m5_red",20000],["A3L_GrandCaravanRed",16500],["C_Offroad_01_F",20000],["cl3_range_rover_red",25000],["A3L_F350Black",30000],["C_Van_01_transport_F",97500],["cl3_defender_110_cammo",80000],["cl3_insignia_red",300000],["cl3_e63_amg_red",300000],["cl3_dbs_volante_red",300000],["cl3_r8_spyder_red",300000],["cl3_arielatom_race_red",300000],["Jonzie_Viper",375000],["cl3_murcielago_red",600000],["cl3_458_red",600000],["cl3_lamborghini_gt1_red",600000],["cl3_reventon_red",600000],["S_McLarenP1_Black",650000],["cl3_veyron_red_red",700000],["A3L_CVPILBFD",9000],["cl3_dodge_charger_emt",15000],["Jonzie_Ambulance",60000],["A3L_LadderTruck",140000],["A3L_TaurusFPBLBPD",8000],["A3L_TaurusFPBLBCSO",8000],["A3L_CVPIFPBPD",12000],["A3L_CVPIFPBCSO",12000],["A3L_CVPIFPBLBPD",12000],["A3L_CVPIFPBLBCSO",12000],["A3L_jailBus",15000],["A3L_SuburbanCSO",12000],["A3L_Suburban",12000],["A3L_ChargerLB",15000],["A3L_EvoXFPBLBPD",15000],["A3L_EvoXFPBLBSO",15000],["IVORY_REV",600000],["B_APC_Wheeled_01_cannon_F",1000000],["C_Van_01_box_F",97500],["I_Truck_02_transport_F",115000],["I_Truck_02_covered_F",135000],["O_Truck_03_transport_F",190000],["O_Truck_03_covered_F",210000],["O_Truck_03_device_F",250000],["B_Truck_01_mover_F",275000],["B_Truck_01_transport_F",300000],["B_Truck_01_fuel_F",300000],["B_Truck_01_box_F",300000],["C_Rubberboat",1200],["O_SDV_01_F",5000],["B_SDV_01_F",5000],["C_Boat_Civil_01_F",3520],["C_Boat_Civil_01_police_F",2520],["B_Boat_Transport_01_F",4600],["B_Heli_Light_01_armed_F",40000],["B_Boat_Armed_01_minigun_F",120000],["B_Heli_Light_01_F",300000],["C_Heli_Light_01_civil_F",450000],["O_Heli_Light_02_unarmed_F",900000],["O_Heli_Transport_04_bench_F",900000],["O_Heli_Transport_04_medevac_F",350000],["I_Heli_Transport_02_F",1600000],["O_Heli_Transport_04_box_F",1600000],["I_Heli_light_03_unarmed_F",2540000],["B_Heli_Transport_03_unarmed_F",3000000],["bwi_a3_t6a_1",1750000],["A3L_MonsterTruck",600000],["Land_CargoBox_V1_F",1],["Land_Cargo20_blue_F",1],["Box_IND_Grenades_F",1],["B_supplyCrate_F",1]
-];
+
+life_garage_sell = [["B_Quadbike_01_F",2000],["dbo_CIV_new_bike",5000],["cl3_volha_grey",2500],["RDS_Octavia_Civ_01",2600],["cl3_lada_white",2750],["cl3_s1203_blue",3000],["A3L_EscortTaxi",3200],["RDS_Golf4_Civ_01",3350],["IVORY_PRIUS",3500],["exxpensive_chevrolet_caprice_base",20000],["A3L_RegalRed",5000],["A3L_FordKaRed",5350],["cl3_golf_mk2_red",6400],["A3L_PuntoRed",6000],["exxpensive_2cv_base",7000],["cl3_polo_gti_red",8600],["Jonzie_Mini_Cooper",8600],["DAR_FusionCivBlue",10000],["D_Cobalt_Red",10000],["A3L_AMXRed",10000],["exxpensive_volvo_242_base",12500],["SAL_AudiCiv",15500],["A3L_VolvoS60Rred",16500],["exxpensive_m5_e34_base",18500],["A3L_JeepRedBlack",15000],["SAL_77TRANSAMCiv",15000],["SAL_IROCCiv",15000],["cl3_dodge_charger_f_red",15000],["A3L_ChallengerRed",15000],["A3L_GrandCaravanRed",16500],["ebike_epoch",80500],["A3L_Camaro",19500],["Jonzie_Mini_Cooper_R_spec",20000],["cl3_civic_vti_red",27500],["exxpensive_cadillac_sedan_base",28500],["DAR_M3CivGrey",29500],["A3L_F350Black",30000],["C_Van_01_transport_F",78000],["cl3_z4_2008_red",80000],["exxpensive_jaguar_base",80000],["exxpensive_mercedes_sls_base",80000],["HMMWV_M1035",100000],["cl3_e60_m5_red",100000],["exxpensive_ford_raptor_base",95000],["LandRover_TK_CIV_EP1",100000],["cl3_defender_110_cammo",100000],["cl3_range_rover_red",110000],["cl3_arielatom_race_red",200000],["cl3_insignia_red",300000],["cl3_e63_amg_red",300000],["cl3_dbs_volante_red",300000],["IVORY_R8",550000],["cl3_r8_spyder_red",300000],["C_Offroad_01_F",300000],["Jonzie_Viper",375000],["A3L_MonsterTruck",600000],["cl3_murcielago_red",550000],["cl3_458_red",650000],["exxpensive_aventador_base",550000],["cl3_lamborghini_gt1_red",650000],["cl3_reventon_red",600000],["S_McLarenP1_Black",650000],["cl3_veyron_red_red",700000],["A3L_CVPILBFD",2250],["cl3_dodge_charger_emt",3750],["Jonzie_Ambulance",15000],["A3L_LadderTruck",35000],["A3L_TaurusFPBLBPD",8000],["A3L_TaurusFPBLBCSO",8000],["A3L_CVPIFPBPD",12000],["A3L_CVPIFPBCSO",12000],["A3L_CVPIFPBLBPD",12000],["A3L_CVPIFPBLBCSO",12000],["A3L_jailBus",15000],["DAR_ExplorerPolice",12000],["DAR_TahoePolice",12000],["DAR_TahoePoliceSlick",12000],["A3L_ChargerLB",15000],["A3L_EvoXFPBLBPD",15000],["A3L_EvoXFPBLBSO",15000],["IVORY_REV",600000],["B_APC_Wheeled_01_cannon_F",1000000],["C_Van_01_box_F",97500],["I_Truck_02_transport_F",115000],["I_Truck_02_covered_F",135000],["O_Truck_03_transport_F",190000],["O_Truck_03_covered_F",210000],["O_Truck_03_device_F",250000],["B_Truck_01_mover_F",275000],["B_Truck_01_transport_F",300000],["B_Truck_01_fuel_F",300000],["B_Truck_01_box_F",470000],["C_Rubberboat",1200],["jetski_epoch",4500],["B_CBS_WaterShadow730_F",4500],["O_SDV_01_F",5000],["B_SDV_01_F",5000],["C_Boat_Civil_01_F",3520],["C_Boat_Civil_01_police_F",3520],["B_Boat_Transport_01_F",4600],["B_Heli_Light_01_armed_F",300000],["B_Boat_Armed_01_minigun_F",200000],["B_Heli_Light_01_F",250000],["C_Heli_Light_01_civil_F",450000],["ivory_b206",600000],["ivory_b206_news",200000],["IVORY_BELL512",800000],["O_Heli_Light_02_unarmed_F",900000],["O_Heli_Transport_04_bench_F",900000],["O_Heli_Transport_04_medevac_F",650000],["I_Heli_Transport_02_F",1300000],["IVORY_UH1Y_UNARMED",1300000],["O_Heli_Transport_04_box_F",1200000],["I_Heli_light_03_unarmed_F",2000000],["B_Heli_Transport_03_unarmed_F",3000000],["kyo_MH47E_HC",3500000],["bwi_a3_t6a_1",200000],["FLAY_HangGlider",350000],["MV22",3000000],["Land_CargoBox_V1_F",1],["Land_Cargo20_blue_F",1],["Box_IND_Grenades_F",1],["B_supplyCrate_F",1]];
+
 __CONST__(life_garage_sell,life_garage_sell);

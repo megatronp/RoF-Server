@@ -1573,6 +1573,27 @@
 		<Key ID="STR_License_Goldbar">
 			<Original>GoldBar Crafting</Original>
 		</Key>
+		<Key ID="STR_License_GangOGC">
+			<Original>OGC Gang </Original>
+		</Key>
+		<Key ID="STR_License_GangBoundurant">
+			<Original>Bounduraunt Gang</Original>
+		</Key>
+		<Key ID="STR_License_GangEnterprise">
+			<Original>The Enterprise Gang</Original>
+		</Key>
+		<Key ID="STR_License_GangTBB">
+			<Original>TBB Gang</Original>
+		</Key>
+		<Key ID="STR_License_GangOpen1">
+			<Original>Open Gang1</Original>
+		</Key>
+		<Key ID="STR_License_GangOpen2">
+			<Original>Open Gang2</Original>
+		</Key>
+		<Key ID="STR_License_NewsCrew">
+			<Original>Channel 7 Press Pass</Original>
+		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">

@@ -12,6 +12,55 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_shop) do
 {
+
+	case "channel7news":
+	{
+		switch (true) do 
+		{
+			case (!license_civ_gang_newscrew): {"You don't have a Press Pass!"};
+			default {
+				["Channel 7 News Shop",
+					[
+						["Binocular",nil,150],
+						["Rangefinder",nil,900],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["V_Press_F",nil,1000],
+						["Press_Cam_F",nil,5000],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
+					]
+				];
+			};
+		};
+	};
+
+	case "med_basic":
+	{
+		switch (true) do 
+		{
+			case (playerSide != independent): {"You are not an EMS Medic"};
+			default {
+				["Hospital EMS Shop",
+					[
+						["ItemGPS",nil,0],
+						["Binocular",nil,0],
+						["ToolKit",nil,0],
+						["FirstAidKit",nil,0],
+						["Medikit",nil,0],
+						["B_FieldPack_ocamo",nil,0],
+						["EMTRM_uni","Short-Sleeve Uniform",10],
+						["emsoff_uni","Off-Duty EMS",10]
+					]
+				];
+			};
+		};
+	};
+
+
 	case "med_basic":
 	{
 		switch (true) do 
@@ -38,13 +87,19 @@ case "cop_basic":
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};		
-			case (__GETC__(life_coplevel) > 4): 
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) > 5): 
 			{
-				["Top Cop Shop",
+				["High Command Shop",
 					[
 						["Taser_26","Taser",2000],
 						["26_cartridge","Taser Magazine",50],
+						["Trixie_CZ550",nil,15000],
+						["Trixie_CZ550_Mag",nil,300],
+						["hlc_rifle_M21",nil,90000],
+						["hlc_20Rnd_762x51_B_M14",nil,500],
+						["hlc_optic_LRT_m14",nil,5000],
+						["hlc_muzzle_snds_M14",nil,10000],						
 						["hlc_smg_mp5a2","MP5A2",4200],
 						["hlc_30Rnd_9x19_B_MP5",nil,100],
 						["hlc_smg_mp5k",nil,3200],
@@ -52,11 +107,61 @@ case "cop_basic":
 						["hlc_30Rnd_10mm_B_MP5",nil,120],
 						["RH_eotech553",nil,1500],
 						["RH_M4A1_ris",nil,25000],
-						["RH_ta31rco_2D",nil,5000],
-						["RH_p226","P226",3500],
-						["RH_15Rnd_9x19_SIG",nil,150],
+						["optic_Hamr",nil,5000],
 						["RH_fn57",nil,5500],
 						["RH_20Rnd_57x28_FN",nil,150],
+						["30Rnd_556x45_Stanag",nil,150],
+						["hlc_rifle_STG58F",nil,30000],
+						["hlc_20rnd_762x51_b_fal",nil,150],
+						["optic_dms",nil,5000],
+						["RH_t1",nil,1500],
+						["RH_Mk12mod1",nil,15000],
+						["RH_SFM952V","M4 flashlight",150],
+						["RH_X300","light for semi-pistols",200],
+						["HandGrenade_Stone","Flashbang",700],
+						["Rangefinder",nil,100],
+						["optic_Aco",nil,1000],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,100],
+						["FirstAidKit",nil,100],
+						["SatchelCharge_Remote_Mag",nil,10000],
+						["U_B_CombatUniform_mcam_worn","Officer Uniform",25],
+						["U_B_Wetsuit",nil,25],
+						["V_RebreatherB",nil,25],
+			            ["V_TacVest_blk_POLICE",nil,1000],
+						["B_Bergen_blk",nil,1000],
+						["SERTvest2",nil,1000],
+						["G_Aviator",nil,100],
+						["A3L_sargehat",nil,2000],
+						["H_Beret_02",nil,100],
+						["H_Beret_blk_POLICE",nil,100],
+						["A3L_policehelmet",nil,100],
+						["G_Balaclava_blk",nil,100],
+						["H_Watchcap_blk",nil,100],
+						["doj_uni","Sheriff",100],
+						["A3L_FatHead",nil,100]
+						
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) > 4): 
+			{
+				["Command Shop",
+					[
+						["Taser_26","Taser",2000],
+						["26_cartridge","Taser Magazine",50],
+						["Trixie_CZ550",nil,35000],
+						["Trixie_CZ550_Mag",nil,300],
+						["hlc_smg_mp5a2","MP5A2",4200],
+						["hlc_30Rnd_9x19_B_MP5",nil,100],
+						["hlc_smg_mp5k",nil,3200],
+						["hlc_smg_mp510",nil,1200],
+						["hlc_30Rnd_10mm_B_MP5",nil,120],
+						["RH_eotech553",nil,1500],
+						["RH_M4A1_ris",nil,25000],
+						["optic_Hamr",nil,5000],
+						["RH_p226","P226",3500],
+						["RH_15Rnd_9x19_SIG",nil,150],
 						["30Rnd_556x45_Stanag",nil,150],
 						["RH_ar10",nil,25000],
 						["RH_20Rnd_762x51_AR10",nil,150],
@@ -72,42 +177,40 @@ case "cop_basic":
 						["ItemGPS",nil,100],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,100],
-						["Medikit",nil,1000],
 						["SatchelCharge_Remote_Mag",nil,10000],
-						["U_B_CombatUniform_mcam_worn","Officer Uniform",25],
+						["U_Rangemaster","Cop Uniform",125],
 						["U_B_Wetsuit",nil,25],
 						["V_RebreatherB",nil,25],
 			            ["V_TacVest_blk_POLICE",nil,1000],
 						["B_Bergen_blk",nil,1000],
-						["SERTvest2",nil,1000],
-						["G_Aviator",nil,100],
 						["A3L_sargehat",nil,2000],
 						["H_Beret_02",nil,100],
 						["H_Beret_blk_POLICE",nil,100],
 						["A3L_policehelmet",nil,100],
 						["G_Balaclava_blk",nil,100],
-						["H_Watchcap_blk",nil,100]
+						["H_Watchcap_blk",nil,100],
+						["sheriff_uni1","Lt.",100],
+						["A3L_FatHead",nil,100]
 						
 					]
 				];
 			};
 			case (__GETC__(life_coplevel) > 1): 
 			{
-				["Altis Patrol Officer Shop",
+				["Officer Shop",
 					[
 						["Taser_26","Taser",1000],
 						["26_cartridge","Taser Magazine",50],
-						["Trixie_CZ550",nil,15000],
-						["Trixie_CZ550_Mag",nil,300],
-						["RH_M16A4_m",nil,18000],
-						["RH_M4A1_ris",nil,25000],
+						["RH_M16A4_m",nil,20000],
+						["RH_Mk12mod1",nil,20000],
+						["RH_ta31rco_2D",nil,8000],
 						["hlc_smg_mp5a4","MP5A4",9200],
 						["hlc_30Rnd_9x19_B_MP5",nil,100],
 						["RH_eotech553",nil,1500],
 						["RH_m9","M9",6500],
 						["RH_15Rnd_9x19_M9",nil,100],
 						["optic_Aco",nil,1000],
-						["30Rnd_556x45_Stanag",nil,1000],
+						["30Rnd_556x45_Stanag",nil,200],
 						["RH_X300","light for semi-pistols",500],
 						["RH_reflex",nil,1200],
 						["RH_compm4s",nil,3000],
@@ -116,19 +219,22 @@ case "cop_basic":
 						["ItemGPS",nil,100],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,1],
-			            ["Medikit",nil,2000],
 						["SmokeShell",nil,100],
  						["SmokeShellRed",nil,100],
 						["SmokeShellYellow",nil,100],
 						["SmokeShellPurple",nil,100],
 						["SmokeShellOrange",nil,100],
 						["V_TacVest_blk_POLICE",nil,2225],
+						["V_BandollierB_blk",nil,2225],
+						["U_Rangemaster","Cop Uniform",125],
 						["A3L_policehelmet",nil,180],
 						["B_Kitbag_cbr",nil,800],
 						["U_B_Wetsuit",nil,25],
 						["V_RebreatherB",nil,25],
 						["H_Cap_police",nil,100],
-						["H_Watchcap_cbr",nil,100]
+						["H_Watchcap_cbr",nil,100],
+						["sheriff_uni1","Deputy",100],
+						["A3L_FatHead",nil,100]
 					]
 				];
 			};
@@ -147,12 +253,12 @@ case "cop_basic":
 						["ItemGPS",nil,100],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,3000],
 						["optic_ACO_grn",nil,2000],
 						["optic_Holosight",nil,1200],
 						["U_Rangemaster","Cop Uniform",125],
 						["H_Cap_police",nil,180],
-						["B_Kitbag_cbr",nil,800]
+						["B_Kitbag_cbr",nil,800],
+						["A3L_FatHead",nil,100]
 					]
 				];
 			};
@@ -166,45 +272,8 @@ case "cop_basic":
 			case (__GETC__(life_coplevel) < 6): {"You are not at a F.B.I. rank!"};
 			default
 			{
-				["Federal Bureau of Investigation Shop",
-					[
-						["hgun_Pistol_heavy_01_F",nil,1000],
-						["11Rnd_45ACP_Mag",nil,25],
-						["optic_MRD",nil,1000],
-						["SMG_01_F","Taser Rifle",1500],
-						["30Rnd_45ACP_Mag_SMG_01_tracer_green","Taser Magazine",50],
-						["srifle_EBR_F",nil,80000],
-						["20Rnd_762x51_Mag",nil,100],
-						["optic_SOS",nil,1000],
-						["muzzle_snds_B",nil,1000],
-						["muzzle_snds_acp",nil,1000],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["Rangefinder",nil,1000],
-						["optic_Hamr",nil,1000],
-						["optic_MRCO",nil,1000],
-						["Binocular",nil,100],
-						["ItemGPS",nil,100],
-						["ToolKit",nil,100],
-						["FirstAidKit",nil,1],
-			            ["Medikit",nil,2000],
-						["SmokeShell",nil,100],
- 						["SmokeShellRed",nil,100],
-						["SmokeShellYellow",nil,100],
-						["SmokeShellPurple",nil,100],
-						["SmokeShellOrange",nil,100],
-						["U_IG_leader","FBI UC Uniform",125],
-						["U_IG_Guerilla2_3","FBI UC Uniform",125],
-						["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
-						["U_C_Poor_2","Rag tagged clothes",250],
-						["U_IG_Guerilla2_2","Green stripped shirt & Pants",500],
-		                ["U_IG_Guerilla3_1","Brown Jacket & Pants",500],
-						["U_C_HunterBody_grn","The Hunters Look",500],
-	                 	["U_C_WorkerCoveralls","Mechanic Coveralls",500], 
-						["U_B_Wetsuit",nil,25],
-						["V_RebreatherB",nil,25],
-						["V_TacVest_khk",nil,180],
+				["Undercover Shop",
+					[						
 						["H_Shemag_olive",nil,100],
 						["G_Bandanna_beast",nil,100],
 						["G_Bandanna_aviator",nil,100],
@@ -226,7 +295,8 @@ case "cop_basic":
 			            ["G_Lady_Dark",nil,150],
 			            ["G_Lady_Blue",nil,150],
 			            ["G_Lowprofile",nil,30],
-						["H_Watchcap_cbr",nil,100]
+						["H_Watchcap_cbr",nil,100],
+						["A3L_FatHead",nil,100]
 					]
 				];
 			};
@@ -272,6 +342,11 @@ case "cop_basic":
 						["hlc_optic_kobra","sight for AK",7600],
 						["hlc_muzzle_545SUP_AK","AK74 Silencer",12500],
 						["hlc_muzzle_762SUP_AK","AKM Silencer",12500],
+						["hlc_rifle_L1A1SLR",nil,150000],
+						["hlc_muzzle_snds_fal",nil,25000],
+						["hlc_optic_suit","Fal Scope",15000],
+						["hlc_20rnd_762x51_b_fal",nil,500],
+						["hlc_rifle_FAL5061",nil,150000],
 						["SmokeShell",nil,500],
  						["SmokeShellRed",nil,500],
 						["SmokeShellYellow",nil,500],
@@ -319,8 +394,6 @@ case "cop_basic":
 						["RH_ttracker_g",nil,15000],
 						["RH_mk2",nil,5500],
 						["RH_10Rnd_22LR_mk2",nil,200],
-						["Trixie_CZ550",nil,70000],
-						["Trixie_CZ550_Mag",nil,500],
 						["Trixie_Enfield",nil,10000],
 						["Trixie_Enfield_Mag",nil,300]
 					]
@@ -360,6 +433,9 @@ case "cop_basic":
 						["hlc_75Rnd_762x39_m_rpk",nil,5500],
 						["RH_SFM952V","Vltor flashlight",2000],
 						["RH_reflex","Vltor sight",4500],
+						["hlc_rifle_M14",nil,120000],
+						["hlc_optic_artel_m14",nil,12500],
+						["hlc_20Rnd_762x51_B_M14",nil,500],
 						["ToolKit",nil,2000],
 						["itemgps",nil,500],
 						["FirstAidKit",nil,100],
@@ -380,6 +456,10 @@ case "cop_basic":
 						["HLC_Optic_PSO1","Long Scope for AKs",6000],
 						["Trixie_CZ550",nil,48000],
 						["Trixie_CZ550_Mag",nil,500],
+						["hlc_rifle_g3sg1",nil,150000],
+						["hlc_muzzle_snds_g3",nil,20000],
+						["HLC_Optic_ZFSG1",nil,15000],
+						["hlc_20rnd_762x51_b_G3",nil,500],
 						["30Rnd_556x45_Stanag",nil,225],
 						["RH_Deagles","Desert Eagle",12500],
 						["RH_Deagleg","Golden Eagle",12500],
@@ -393,6 +473,9 @@ case "cop_basic":
 						["hlc_rifle_rpk",nil,120000],
                         ["hlc_30Rnd_762x39_b_ak",nil,180],
 						["hlc_30Rnd_545x39_B_AK",nil,180],
+						["hlc_rifle_M14",nil,120000],
+						["hlc_optic_artel_m14",nil,12500],
+						["hlc_20Rnd_762x51_B_M14",nil,500],
 						["hlc_smg_MP5N",nil,28000],
 						["hlc_30Rnd_9x19_B_MP5",nil,100],
 						["RH_kimber",nil,11000],
@@ -453,6 +536,15 @@ case "cop_basic":
 						["RH_ta31rco_2D","ACOG for Vltor",7500],
 						["RH_SFM952V","Vltor flashlight",2000],
 						["RH_reflex","Reflex for Vltor",2000],
+						["hlc_rifle_psg1",nil,220000],
+						["hlc_rifle_g3sg1",nil,130000],
+						["hlc_muzzle_snds_g3",nil,15000],
+						["HLC_Optic_ZFSG1",nil,12000],
+						["hlc_20rnd_762x51_b_G3",nil,500],
+						["hlc_rifle_M14",nil,100000],
+						["hlc_optic_artel_m14",nil,12500],
+						["hlc_20Rnd_762x51_B_M14",nil,500],
+						["hlc_muzzle_snds_M14",nil,150000],
 						["ToolKit",nil,2000],
 						["itemgps",nil,500],
 						["FirstAidKit",nil,100],

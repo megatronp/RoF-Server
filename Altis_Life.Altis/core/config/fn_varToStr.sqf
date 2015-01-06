@@ -100,4 +100,11 @@ switch (_var) do
 	case "license_civ_uranium": {(localize "STR_License_Uranium")};
 	case "license_civ_goldbar": {(localize "STR_License_Goldbar")};
 	case "license_civ_home": {(localize "STR_License_Home")};
+	case "license_civ_gang_ogc": {(localize "STR_License_GangOGC")};
+	case "license_civ_gang_boundurant": {(localize "STR_License_GangBoundurant")};
+	case "license_civ_gang_enterprise": {(localize "STR_License_GangEnterprise")};
+	case "license_civ_gang_tbb": {(localize "STR_License_GangTBB")};
+	case "license_civ_gang_open1": {(localize "STR_License_GangOpen1")};
+	case "license_civ_gang_open2": {(localize "STR_License_GangOpen2")};
+	case "license_civ_gang_newscrew": {(localize "STR_License_NewsCrew")};
 };

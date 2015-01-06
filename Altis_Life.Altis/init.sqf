@@ -14,7 +14,7 @@ life_versionInfo = "Altis Life RPG v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "scripts\fn_addATMS.sqf";
-[] execVM "scripts\fn_noSideVoice.sqf";
+//[] execVM "scripts\fn_noSideVoice.sqf";
 [] execVM "scripts\fn_statusBar.sqf";
 _igiload = execVM "core\IgiLoad\IgiLoadInit.sqf";
 {_x setMarkerAlphaLocal 0} forEach ["mrkRed","mrkRed_1","mrkRed_1_1","mrkRed_1_3","mrkGreen"];

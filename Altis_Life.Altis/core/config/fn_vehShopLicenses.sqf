@@ -44,6 +44,7 @@ switch (life_veh_shop select 0) do
 	case "fed_car": {_ret = true;};
 	case "fed_air": {_ret = true;};
 	case "blackmarket_1": {_ret = true;};
+	case "channel_7": {_ret = true;};
 	case "cop_ship_1": 
 	{
 		if(_veh == "B_Boat_Armed_01_minigun_F") then

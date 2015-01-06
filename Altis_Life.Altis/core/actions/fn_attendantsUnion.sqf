@@ -16,9 +16,9 @@ if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the 
 if (vehicle player != _robber) exitWith { hint "Attendant: How exactly do you plan to rob me from the inside of your vehicle?!";};
 if !(alive _robber) exitWith {};
 
-_robtimer = TheUnionBoss getVariable ["robtimer",(5 * 60)];
-_striketime = TheUnionBoss getVariable ["striketime",(25 * 60)]; 
-_funnymoney = TheUnionBoss getVariable ["funnymoney",60000 + round(random 40000)];
+_robtimer = TheUnionBoss getVariable ["robtimer",(7 * 60)];
+_striketime = TheUnionBoss getVariable ["striketime",(30 * 60)]; 
+_funnymoney = TheUnionBoss getVariable ["funnymoney",60000 + round(random 70000)];
 _copcount = TheUnionBoss getVariable["copcount",3];
 TheUnionBoss setVariable ["cuffbonus",50000, true];
 TheUnionBoss setVariable ["reassure",10000, true];

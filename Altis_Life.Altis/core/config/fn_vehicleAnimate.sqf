@@ -31,9 +31,7 @@ if(!_preset) then
 		case "civ_littlebird":
 		{
 			waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
-		if !((_vehicle getVariable "Life_VEH_color") in [2,4,9,13,14,15,16,18,19,20,21]) then {
 			_vehicle animate ["addBenches",0];
-			};
 			_vehicle animate ["addDoors",1];
 			_vehicle animate ["addTread",0];
 			_vehicle animate ["AddCivilian_hide",1];

@@ -2467,7 +2467,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2769;
+		items=2773;
 		class Item0
 		{
 			position[]={7891.6401,14.0333,24966.5};
@@ -3076,8 +3076,8 @@ class Mission
 		};
 		class Item59
 		{
-			position[]={3045.8301,2.01456,12614.1};
-			azimut=-305.86401;
+			position[]={3048.9568,2.048413,12644.197};
+			azimut=-172.96658;
 			id=174;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
@@ -29886,10 +29886,52 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
+		class Item2769
+		{
+			position[]={4541.1016,264.04218,15400.543};
+			azimut=185;
+			id=2884;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			skill=0.60000002;
+			init="this enableSimulation false;   this setObjectTexture [0, ""icons\rof.paa""];    this allowDamage false;   this setVectorUp [0,0,1];  this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,[],0,false,false,"""",' _target distance _this < 6 && license_civ_gang_newscrew'];  this addAction[""Channel 7 Items Shop"",life_fnc_weaponShopMenu,""channel7news"",0,false,false,"""",' _target distance _this < 6 && license_civ_gang_newscrew'];   this addAction[""Channel 7 Vehicle Shop"",life_fnc_vehicleShopMenu,[""channel_7"",civilian,""news_car_spawn"",""civ"",""Channel 7 News""],0,false,false,"""",' _target distance _this < 6 && license_civ_gang_newscrew'];  this addAction[""Air Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,true] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""news_car_spawn""; life_garage_type = ""Air"";  },"""",0,false,false,"""",' _target distance _this < 6 && license_civ_gang_newscrew'];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,true] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""news_car_spawn""; life_garage_type = ""Car"";  },"""",0,false,false,"""",' _target distance _this < 6 && license_civ_gang_newscrew'];    this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,true,"""",'!life_garage_store && _target distance _this < 6 &&  license_civ_gang_newscrew'];  this addAction[""Medical Assistance"",life_fnc_healHospital];";
+		};
+		class Item2770
+		{
+			position[]={4544.0586,263.57748,15413.497};
+			azimut=-154.28671;
+			id=2885;
+			side="EMPTY";
+			vehicle="Land_HelipadRescue_F";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="pryhosp_logo_1_2_1";
+		};
+		class Item2771
+		{
+			position[]={4541.4043,264.18353,15396.981};
+			azimut=1080.2079;
+			id=2886;
+			side="EMPTY";
+			vehicle="Land_LampStreet_F";
+			skill=0.60000002;
+			init="this allowDamage false;this setVectorUp [0,0,1]; ";
+		};
+		class Item2772
+		{
+			position[]={4567.8887,261.56348,15430.771};
+			azimut=1016.6333;
+			id=2887;
+			side="EMPTY";
+			vehicle="Land_LampStreet_F";
+			skill=0.60000002;
+			init="this allowDamage false;this setVectorUp [0,0,1]; ";
+		};
 	};
 	class Markers
 	{
-		items=466;
+		items=468;
 		class Item0
 		{
 			position[]={8499.4297,106.858,25143.801};
@@ -30204,7 +30246,7 @@ class Mission
 		};
 		class Item41
 		{
-			position[]={3041.55,2.0197001,12612.5};
+			position[]={3049.2612,1.4296594,12645.847};
 			name="boat_2";
 			text="Boat Shop";
 			type="c_ship";
@@ -33519,6 +33561,20 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 			angle=-10.083266;
+		};
+		class Item466
+		{
+			position[]={4544.1953,265.52252,15382.551};
+			name="license_civ_gang_newscrew_spawn";
+			text="license_civ_gang_newscrew_spawn";
+			type="Empty";
+		};
+		class Item467
+		{
+			position[]={4543.8564,263.59497,15413.651};
+			name="news_car_spawn";
+			type="Empty";
+			angle=383.51413;
 		};
 	};
 	class Sensors

@@ -159,7 +159,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["moonshine", 3000, 2000, 6000, 10, 7,   
+	["moonshine", 1200, 700, 1500, 10, 7,   
 		[
 			["marijuana",1], 
 			["turtle",1],

@@ -38,6 +38,12 @@ life_deathCamera camCommit 0;
 //Create a thread for something?
 _unit spawn
 {
+
+		life_is_arrested = true;
+		[] call SOCK_fnc_updateRequest;
+		[0,"!Combat log and you will go to Jail and be unable to Bail out for 15 minutes instead of 5!"] spawn life_fnc_broadcast;
+
+	
 	private["_maxTime","_RespawnBtn","_Timer"];
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
@@ -50,7 +56,7 @@ _unit spawn
 	
 	if (Life_request_timer) then 
 	{
-		_maxTime = time + (life_respawn_timer * 700);
+		_maxTime = time + (life_respawn_timer * 85);
 		waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 		round(_maxTime - time) <= 0 || isNull _this};
 	};
@@ -108,7 +114,6 @@ life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
 life_cash = 0;
-
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 

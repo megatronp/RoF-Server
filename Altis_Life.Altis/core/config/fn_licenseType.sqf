@@ -42,6 +42,13 @@ switch (_mode) do
 			case "moonshine": {_var = "license_civ_moonshine"};
 			case "goldbar": {_var = "license_civ_goldbar"};
 			case "uranium": {_var = "license_civ_uranium"};
+			case "g_ogc": {_var = "license_civ_gang_ogc"};
+			case "g_boundurant": {_var = "license_civ_gang_boundurant"};
+			case "g_enterprise": {_var = "license_civ_gang_enterprise"};
+			case "g_tbb": {_var = "license_civ_gang_tbb"};
+			case "g_open1": {_var = "license_civ_gang_open1"};
+			case "g_open2": {_var = "license_civ_gang_open2"};
+			case "g_newscrew": {_var = "license_civ_gang_newscrew"};
 			//case "crackc": {_var = "license_civ_crackc"};
 			default {_var = ""};
 		};
